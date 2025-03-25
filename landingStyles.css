@@ -7,8 +7,12 @@
 
 .container {
     background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),url(background.svg); 
+    background-position: center;
+    
+    overflow: hidden;
     display: flex;
-    width: 100vw;
+    flex-direction: column;
+    max-width: 100%;
     height: 100vh;
 }
 
@@ -16,9 +20,11 @@ header nav {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 20px 50px;
+    padding: 20px;
     background-color: #121d3e;
     gap: 5%;
+    width: 98%;
+    
 }
 
 header nav a {
@@ -28,54 +34,26 @@ header nav a {
 
 #myHome {
     margin-right:auto;
-    font-size: 1.5em;
+    font-size: 1.2em;
 }
 
 footer {
-    align-self: flex-end;
+    justify-content: flex-end;
     padding: 20px 50px;
     background-color: #121d3e;
-}
-
-main {
-
-}
-/*.parent {
-    /* 
-    display: flex;
+    width: 100%;
     flex-direction: row;
-  }
-  
-  @media screen and (min-width: 390px) and (max-width: 767px) {
-    .container {
-      height: 100%;
-    }
-  
-    .container .navbar {
-      flex-direction: column;
-    }
-  }
-  header {
-    background-color: #01161E;
-  }
-  
-  header nav {
-    flex-grow: 9;
-    gap: 20px;
-    margin: 2px;
-    padding: 10px;
+    overflow: hidden;
     
-  }
-  
-  header nav a {
-    color: #EFF6E0;  
-  }
-  
-  header nav a:first-child {
-    margin-right:auto;
-  }
-  
-  footer {
-     background-color: #01161E;
-     align-self: flex-end;
-  } */
+}
+
+ main {
+    align-items: center;
+    padding: 10%;
+    margin: 10%;
+    flex-grow: 1.5;
+    color: #dee4fc;
+    text-shadow: 3px 2px 8px #0a122f;
+    font-size: 1.5em;
+
+}
