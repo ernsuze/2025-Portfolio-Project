@@ -1,78 +1,98 @@
-.parent {
-    display:grid;
-    grid-template-areas:
-      "header header header"
-      ".container .container .container"
-      "footer footer footer";
-    grid-template-rows: .75fr 6fr .75fr;
-  }
-  
-  header {
-    background-color: #01161E;
-  }
-  
-  header nav {
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, Times New Roman, Arial;
+  text-decoration: none;
+}
+
+/*
+.container {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),url(background.svg); 
+    background-position: center;
+    
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    height: 100vh;
+}
+*/
+
+header nav {
     display: flex;
     flex-direction: row;
-    gap: 20px;
-    margin: 2px;
-    padding: 10px;
+    align-items: center;
+    padding: 20px;
+    background-color: #121d3e;
+    gap: 5%;
+    width: 98%;
     
-  }
-  
-  header nav a {
-    color: #EFF6E0;  
-  }
-  
-  header nav a:first-child {
+}
+
+header nav a {
+    color: #EAECF4;
+    font-size: 1em;
+  font-weight: 600;
+}
+
+#myHome {
     margin-right:auto;
-  }
-  
-  footer {
-     background-color: #01161E;
-  }
-  
-  .bubble {
-    background-color: white;
+    font-size: 1.2em;
+}
+
+footer {
+    justify-content: flex-end;
+    padding: 20px 50px;
+    background-color: #121d3e;
+    width: 100%;
+    flex-direction: row;
+    overflow: hidden;
     
-  }
-  
-  h1 {
-    color: #01161E;
-    padding-top: 10px;
-    text-align: center;
-    font-size: 60px;
-  }
-  
-  input {
-    background-color: #FAF9F6;
-    width: 70%;
-    margin-left: 12%; 
-    font-size: 20px;
-    padding: 16px;
-    border-radius: 10px;
-    border-color: black;
-    margin-bottom: 20px;
-  }
-  
-  .msgbox {
-    height: 150px;
-  }
-  
-  button {
-    background-color: #01161E;
-    color: #EFF6E0;
-    font-size: 20px;
-    border-radius: 5px;
-    padding: 10px;
-    margin: 10px 0 10px 0;
-    display: block;
-    width: auto;
-    margin-left: 45%
-  
-  }
-  
-  button:hover {
-    opacity: 80%;
-    cursor: pointer;
-  }
+}
+
+ .container {
+   display: flex;
+   justify-content: center;
+    color: #dee4fc;
+    text-shadow: 3px 2px 8px #0a122f;
+    font-size: 1.5em;
+}
+
+
+h1 {
+  padding: 50px 20px 50px 230px;
+ 
+}
+
+input {
+  background-color: #FAF9F6;
+  width: 70%;
+  margin-left: 12%; 
+  font-size: 20px;
+  padding: 16px;
+  border-radius: 10px;
+  border-color: black;
+  margin-bottom: 20px;
+  border: none;
+}
+
+.msgbox {
+  height: 150px;
+}
+
+button {
+  background-color: #01161E;
+  color: #dee4fc;;
+  font-size: 20px;
+  border-radius: 5px;
+  padding: 10px; 
+  display: flex;
+  width: auto;
+margin: 10px 5px 50px 400px;
+}
+
+button:hover {
+  opacity: 80%;
+  cursor: pointer;
+}
+
