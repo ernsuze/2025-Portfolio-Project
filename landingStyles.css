@@ -2,13 +2,12 @@
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, Arial, Helvetica, sans-serif;
-    
+    text-decoration: none;
 }
 
 .container {
     background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),url(background.svg); 
     background-position: center;
-    
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -29,12 +28,13 @@ header nav {
 
 header nav a {
     color: #EAECF4;
-    font-size: 1em;
+    font-size: 1.5em;
 }
+
 
 #myHome {
     margin-right:auto;
-    font-size: 1.2em;
+    font-size: 1.5em;
 }
 
 footer {
@@ -55,5 +55,10 @@ footer {
     color: #dee4fc;
     text-shadow: 3px 2px 8px #0a122f;
     font-size: 1.5em;
+    text-align: center;
 
+}
+
+h1 {
+    font-size: 2.5em;
 }
