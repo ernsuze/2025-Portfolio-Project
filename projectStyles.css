@@ -1,103 +1,108 @@
 * {
-    margin: 0;
-    padding: 0;
-    font-family: Georgia, Times New Roman, Arial;
-  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  font-family: Georgia, Times New Roman, Arial;
+text-decoration: none;
 }
 
 .container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 0.5fr 2fr 2fr 0.5fr;
-   justify-items: center;
-  outline: 2px solid purple;
- height: 100vh;
-  width: 100vw;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),url(background.svg);
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: 0.5fr 2fr 2fr 0.5fr;
+ justify-items: center;
+outline: 2px solid purple;
+height: 100vh;
+width: 100vw;
 }
 
 .project1 {
-  grid-column: 1;
-  grid-row: 2;
-  width: 45%;
-  height: 30%;
-  outline: 3px solid orange;
-  padding: 15%;
-  text-align: center;
+grid-column: 1;
+grid-row: 2;
+width: 45%;
+height: 30%;
+outline: 3px solid rgb(182, 210, 255);
+padding: 15%;
+text-align: center;
+background-color: #dbe5ff;
 }
 
 .project2 {
-  grid-column: 2;
-  grid-row: 2;
-    width: 45%;
-  height: 30%;
-  outline: 3px solid orange;
-  padding: 15%;
-    text-align: center;
+grid-column: 2;
+grid-row: 2;
+  width: 45%;
+height: 30%;
+outline: 3px solid rgb(255, 251, 244);
+padding: 15%;
+  text-align: center;
+  background-color:#dbe5ff;
 }
 
 .project3 {
-   grid-area: 2 / 3 / 3 / 3;
-    width: 45%;
-  height: 30%;
-  outline: 3px solid orange;
-  padding: 15%;
-    text-align: center; 
+ grid-area: 2 / 3 / 3 / 3;
+  width: 45%;
+height: 30%;
+outline: 3px solid orange;
+padding: 15%;
+  text-align: center; 
+  background-color: #dbe5ff;
+
 }
 
 div a {
-  font-size: 1.5em;
+font-size: 1.5em;
 
 }
 .theButtons {
-  display: flex;
-  outline: 2px solid red;
-  height: 175%;
-  justify-content: center;
+display: flex;
+outline: 2px solid red;
+height: 175%;
+justify-content: center;
 }
 
 .projectBtn {
- height: 55px;
- width: 110px;
- align-self: end;
-  font-family: Arial;
-  font-size: 1em;
-  font-weight: 600;
-  margin: 15px;
-  background-color: #01161E;
-  color: #dee4fc;
-  border: none;
-  border-radius: 12px;
+height: 55px;
+width: 110px;
+align-self: end;
+font-family: Arial;
+font-size: 1em;
+font-weight: 600;
+margin: 15px;
+background-color: #01161E;
+color: #dee4fc;
+border: none;
+border-radius: 12px;
 }
 .projectBtn:hover {
 background: #9EB3F3; }
 
 header nav {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 20px;
-    background-color: #121d3e;
-    gap: 5%;
-    width: 100vw;
-    
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 20px;
+  background-color: #121d3e;
+  gap: 5%;
+  width: 98vw;
+  
 }
 
 header nav a {
-    color: #EAECF4;
-    font-size: 1em;
-  font-weight: 600;
+  color: #EAECF4;
+  font-size: 1em;
+font-weight: 600;
 }
 
 #myHome {
-    margin-right:auto;
-    font-size: 1.2em;
+  margin-right:auto;
+  font-size: 1.2em;
 }
 
 footer {
-    justify-content: flex-end;
-    padding: 20px 50px;
-    background-color: #121d3e;
-    width: 100%;
-    flex-direction: row;
-    overflow: hidden;
+  justify-content: flex-end;
+  padding: 20px 50px;
+  background-color: #121d3e;
+  width: 100%;
+  flex-direction: row;
+  overflow: hidden;
 }
